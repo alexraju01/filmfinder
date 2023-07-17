@@ -18,10 +18,10 @@ function App() {
     <div className="app">
       <Router>
         <Navbar />
-        <Container />
+
         <Routes>
-          {/* <Route path="/" element={<MovieCards />} /> */}
-          <Route path="//films" element={<Container />} />
+          <Route path="/" element={<Container element={<MovieCards />} />} />
+          {/* <Route path="//films" element={<Container />} /> */}
           <Route path="/moviedetail/:id" element={<MovieDetail />} />
         </Routes>
       </Router>
