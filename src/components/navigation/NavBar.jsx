@@ -1,64 +1,40 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
-  faVideo,
-  faGear,
-  faRightFromBracket,
+  faChevronRight,
+  faFilm,
+  faPerson,
+  // faGear,
+  // faRightFromBracket,
   faCompass,
-  faUser,
+  // faUser,
 } from "@fortawesome/free-solid-svg-icons";
+// import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 // import IMAGES from "../../images/images";
 
 // https://icons8.com/icons/set/user-
 function NavBar() {
   return (
-    <aside>
+    <>
       <nav>
-        {/* <div className="user">
-          <div>
-            <h2>Alex Raju</h2>
-            <p>xxxxxx@gmail.com</p>
-          </div>
-        </div> */}
-        <ul>
+        <div className="navlinks">
           <li>
-            <FontAwesomeIcon id="user" icon={faUser} size="2xl" />
-            <p>Movie</p>
-          </li>
-
-          <li>
-            <FontAwesomeIcon id="home" icon={faHouse} size="2xl" />
-            <p>Movie</p>
-          </li>
-
-          <li>
-            <FontAwesomeIcon id="discover" icon={faCompass} size="2xl" />
-            <p className="1">Coffee</p>
+            <FontAwesomeIcon className="icon" icon={faHouse}></FontAwesomeIcon>
+            {/* <p>hello</p> */}
           </li>
           <li>
-            <FontAwesomeIcon id="video" icon={faVideo} size="2xl" />
-            <p>Setting</p>
+            <FontAwesomeIcon className="icon" icon={faCompass}></FontAwesomeIcon>
+            {/* <p>hello</p> */}
           </li>
-        </ul>
-
-        <ul>
           <li>
-            <span>
-              {/* <FontAwesomeIcon id="setting" icon={faGear} size="2xl" /> */}
-              <FontAwesomeIcon id="faRightFromBracket" icon={faRightFromBracket} size="2xl" />
-            </span>
-            <p>Setting</p>
+            <FontAwesomeIcon className="icon" icon={faFilm}></FontAwesomeIcon>
+            {/* <p>hello</p> */}
           </li>
-        </ul>
-
-        <div className="user">
-          <div>
-            <h2>Alex Raju</h2>
-            <p>xxxxxx@gmail.com</p>
-          </div>
         </div>
       </nav>
-    </aside>
+    </>
   );
 }
 

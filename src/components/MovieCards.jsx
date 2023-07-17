@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import NavBar from "./navigation/NavBar";
 
 const tmdbKey = "api_key=3508cfeb65ea11a00fd1a52ff2ae124d";
 const tmdbBaseUrl = "https://api.themoviedb.org/3";
@@ -21,7 +20,6 @@ function MovieCards() {
 
   return (
     <>
-      <NavBar />
       <div className="cardsContainer">
         {movies.map((item, i) => (
           <Card key={i} item={item} />
